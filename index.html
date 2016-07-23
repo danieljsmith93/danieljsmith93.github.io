@@ -7,7 +7,23 @@
 <body ng-app="BlankApp" ng-cloak>
   <!--
     Your HTML content here
-  -->  
+  -->
+  <!-- Container #1 (see wireframe) -->
+    <md-toolbar layout="row" >
+      <h1>Angular Material - Starter App</h1>
+    </md-toolbar>
+
+    <!-- Container #2 -->
+    <div flex layout="row">
+
+        <!-- Container #3 -->
+        <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2"></md-sidenav>
+
+        <!-- Container #4 -->
+        <md-content flex id="content"></md-content>
+
+    </div>
+  
   
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
