@@ -1,2 +1,2 @@
 # danieljsmith93.github.io
-Personal Website
+My personal site
