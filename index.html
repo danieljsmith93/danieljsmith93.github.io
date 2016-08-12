@@ -1,73 +1,40 @@
-<html lang="en" >
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Angular Material style sheet 
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css"> -->
-  <!-- Angular Material CSS now available via Google CDN; version 1.0.7 used here -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+  <!-- CSS (load bootstrap) -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <style>
+    .navbar { border-radius: 0; }
+  </style>
+
+  <!-- JS (load angular, ui-router, and custom js file) -->
+  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+  <script src="app.js"></script>
 </head>
-<body ng-app="BlankApp" ng-cloak layout="column">
-  <!--
-    Your HTML content here
-  -->
-  <!-- Container #1 (see wireframe) -->
-    <md-toolbar layout="row">
-      <h1>Angular Material - Starter App</h1>
-    </md-toolbar>
 
-    <!-- Container #2 -->
-    <div flex layout="row">
+<!-- apply our angular app to site -->
+<body ng-app="routerApp">
 
-        <!-- Container #3 -->
-        <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
-          <md-list>
-            <md-list-item>
-                <md-button>
-                  <a href="#">Section 1</a>
-                </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button>
-                  <a href="#">Section 2</a>
-                </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button>
-                  <a href="#">Section 3</a>
-                </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button>
-                  <a href="#">Section 4</a>
-                </md-button>
-            </md-list-item>
-          </md-list>
-        </md-sidenav>
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="about">About</a></li>
+  </ul>
+</nav>
 
-        <!-- Container #4 -->
-        <md-content flex id="content">
-          <p>Hello Daniel</p>
-        </md-content>
-
-    </div>
+<!-- MAIN CONTENT -->
+<div class="container">
   
+  <!-- INJECTED CONTENT GOES HERE -->
+  <div ui-view></div>
   
-  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+</div>
 
-  <!-- Angular Material Library -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-  
-  <!-- Your application bootstrap  -->
-  <script type="text/javascript">    
-    /**
-     * You must include the dependency on 'ngMaterial' 
-     */
-    angular.module('BlankApp', ['ngMaterial']);
-  </script>
-  
 </body>
 </html>
