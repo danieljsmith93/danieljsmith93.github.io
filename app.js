@@ -1,7 +1,33 @@
 // our angular code
-var routerApp = angular.module('routerApp', ['ui.router']);
+var MyApp = angular.module('MyApp', ['ngMaterial', 'ui.router']);
 
-routerApp.config(function($stateProvider, $urlRouterProvider) {
+// define table controller called in about state
+MyApp.controller('mainController', function($scope, $mdSidenav) {
+
+	this.toggleNavigation = toggleNavigation;
+
+	$scope.cards = [
+	{
+		title: 'DSDevelopment1',
+		subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quo, vero necessitatibus expedita. Impedit tenetur ducimus, repudiandae libero ullam architecto aspernatur, dolorum cumque quisquam obcaecati quia molestiae, error facere amet.'
+	},
+	{
+		title: 'DSDevelopment2',
+		subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quo, vero necessitatibus expedita. Impedit tenetur ducimus, repudiandae libero ullam architecto aspernatur, dolorum cumque quisquam obcaecati quia molestiae, error facere amet.'
+	},
+	{
+		title: 'DSDevelopment3',
+		subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quo, vero necessitatibus expedita. Impedit tenetur ducimus, repudiandae libero ullam architecto aspernatur, dolorum cumque quisquam obcaecati quia molestiae, error facere amet.'
+	}
+
+	];
+
+	function toggleNavigation() {
+	     	$mdSidenav('left').toggle();
+	    }
+});
+
+MyApp.config(function($stateProvider, $urlRouterProvider, $mdIconProvider) {
 
 	$urlRouterProvider.otherwise('/home');
 
@@ -10,13 +36,13 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 		// HOME STATES AND NESTED VIEWS
 		.state('home', {
 			url: '/home',
-			templateUrl: 'partial-home.html'
+			templateUrl: './views/partial-home.html'
 		})
 
 		// nested list with custom controller
 		.state('home.list', {
 			url: '/list',
-			templateUrl: 'partial-home-list.html',
+			templateUrl: './views/partial-home-list.html',
 			controller: function($scope) {
 				$scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
 			}
@@ -31,40 +57,37 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 		// ABOUT PAGE AND MULTIPLE NAMED VIEWS
 		.state('about', {
 			url: '/about',
-			views: {
+			templateUrl: './views/partial-about.html',
+			controller: 'mainController'
+			/*views: {
 
 				// Main template placed here named relatively
-				'': {templateUrl: 'partial-about.html'},
+				'': {templateUrl: './views/partial-about.html'},
 
 				// Child views defined here named absolutely
 				'columnOne@about': {template: 'Look I am a column!'},
 
 				// for column two, we'll define a separate controller
 				'columnTwo@about': {
-					templateUrl: 'table-data.html',
-					controller: 'tableController'
+					templateUrl: './views/table-data.html',
+					controller: 'mainController'
 				}
-			}
-		});
+			}*/
+		})
+
+		// BLOG PAGE WITH MULTIPLE POSTS
+		.state('blog', {
+			url: '/blog',
+			templateUrl: './views/partial-blog.html',
+			controller: 'mainController'
+		})
+
+		$mdIconProvider.icon('menu', './svg/menu.svg', 24);
+;
+
+angular.module('MyApp', ['ngMaterial'])
+	.config(function(){
+	})
 });
 
-// define table controller called in about state
-routerApp.controller('tableController', function($scope) {
 
-	$scope.message = 'test';
-
-	$scope.scotches = [
-		{
-			name: 'Macallan 12',
-			price: 50
-		},
-		{
-			name: 'Chivas Regal Royal Salute',
-			price: 10000
-		},
-		{
-			name: 'Glenfiddich 1937',
-			price: 20000
-		}
-	];
-});
