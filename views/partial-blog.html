@@ -4,9 +4,9 @@
 	
 	<!-- column one named view -->
 	<!-- re-usable table to place anywhere -->
-<md-content class="md-padding" layout="column">	
-	<div flex-xs flex-gt-xs="50" layout="column">
-	  	<md-card md-theme="blue" md-theme-watch ng-repeat="card in cards">
+<md-content class="md-padding" layout="row" layout-align="space-around center">	
+	<div flex-xs flex-gt-xs="50" layout="row">
+	  	<md-card flex-xs flex-gt-xs="50" md-theme="blue" md-theme-watch ng-repeat="card in cards">
 	        <md-card-title>
 	      		<md-card-title-text>
 	            	<span class="md-headline">{{ card.title }}</span>
