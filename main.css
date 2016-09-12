@@ -4,7 +4,7 @@ html, body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	background-color: #F4DAB3;
+	background-color: #2F84BC;
 }
 
 .menu {
@@ -28,12 +28,12 @@ p {
 	font-weight: 500;
 	font-size: 18px;
 	padding-bottom: 10%;
-	color: #E7E4E6;
+	color: #000000;
 
 }
 
 a {
-	color: #E7E4E6;
+	color: #000000;
 }
 
 md-list-item > a {
@@ -49,15 +49,25 @@ md-list-item > a > span {
 	color: #E7E4E6;
 }
 
+md-toolbar {
+	height: 10%;
+}
+
+#siteBrand {
+	margin: auto;
+	align-content: center;
+	margin-top: 1%;
+}
+
 md-sidenav {
-	background-color: #3D442F;
+	background-color: #754C24;
 }
 
 md-content {
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 5px;
-	background-color: #ABC2DB;
+	background-color: #2F84BC;
 }
 
 img {
@@ -71,7 +81,7 @@ img {
 
 .md-headline {
 	margin: auto;
-	color: #E7E4E6;
+	color: #000000;
 
 }
 
@@ -97,7 +107,7 @@ md-card-actions {
 
 md-card {
 	margin: auto;
-	background-color: #7691B5;
+	background-color: #ACCEE4;
 	width: 100%!important;
 	margin-bottom: 1%;
 	margin-top: 1%;

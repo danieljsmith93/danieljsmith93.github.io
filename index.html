@@ -12,7 +12,7 @@
 </head>
 
 <!-- apply our angular app to site -->
-<body ng-app="MyApp" layout="column" >
+<body ng-app="MyApp" layout="column" ng-controller="mainController as menu">
 
 <!-- NAVIGATION -->
 
@@ -29,13 +29,18 @@
 -->
 
 <!-- MAIN CONTENT -->
+<md-toolbar id="siteToolbar" layout="row" flex>
+    <md-button class="menu" ng-controller="mainController as menu" ng-click="menu.toggleNavigation()" hide-gt-sm>
+        <md-icon md-svg-icon="menu" aria-label="Menu"></md-icon>
+    </md-button>
+    <h3 id="siteBrand">Daniel Smith Development</h3>
+</md-toolbar>
  <div class="container" layout="row" flex>
+
     <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp" hide-lt-xs>
             <md-list layout="column">
                 <md-list-item>
-                    <md-button class="menu" ng-controller="mainController as menu" ng-click="menu.toggleNavigation()" hide-gt-sm>
-                        <md-icon md-svg-icon="menu" aria-label="Menu"></md-icon>
-                    </md-button>
+                    
                 </md-list-item>
                 <br>
                 <md-list-item><md-button ui-sref="home">Home</md-button></md-list-item>
@@ -48,9 +53,7 @@
         </md-sidenav>
 
     <md-content id="content" flex layout="row" ng-controller="mainController as menu">
-        <md-button class="menu" ng-click="menu.toggleNavigation()" hide-gt-sm>
-            <md-icon md-svg-icon="menu" aria-label="Menu"></md-icon>
-        </md-button>
+        
         <!-- INJECTED CONTENT GOES HERE -->
         <div class="injectContainer" ui-view></div>
       
