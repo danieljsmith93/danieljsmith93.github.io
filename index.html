@@ -1,74 +1,62 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>DSDev</title>
+    <title>Daniel Smith Development</title>
 
-    <!-- CSS (load bootstrap) -->
-    
-    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 
-
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-
-<!-- apply our angular app to site -->
-<body ng-app="MyApp" layout="column" >
-
-<!-- NAVIGATION -->
-
-<!--<nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-        <a class="navbar-brand" ui-sref="#">DSDev</a>
+<body>
+    <div class="header">
+        <span  class="logo">
+            <a class="logo" href="index.html">
+                &#60; &#32; D &#32; &#62; &#32; S &#32; &#60; &#32; &#47; D &#32; &#62;
+            </a>
+        </span>
+        <nav>
+            <a href="#">About</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="#">Contact</a>
+            <a href="admin.html">Login</a>
+        </nav>
     </div>
-    <ul class="nav navbar-nav">
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="about">About</a></li>
-        <li><a ui-sref="blog"></a>Blog</li>
-    </ul>
-</nav>
--->
+    <div class="main">
+        <h1 id="company-name">Daniel Smith Development</h1>
+        <br>
+        <h3 id="company-slogan-1">Development when you need it.</h3>
+        <br><br>
+        <h3 id="company-slogan-2">Wherever you need it.</h3>
+    </div>
 
-<!-- MAIN CONTENT -->
- <div class="container" layout="row" flex>
-    <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp" hide-lt-xs>
-            <md-list layout="column">
-                <md-list-item>
-                    <md-button class="menu" ng-controller="mainController as menu" ng-click="menu.toggleNavigation()" hide-gt-sm>
-                        <md-icon md-svg-icon="menu" aria-label="Menu"></md-icon>
-                    </md-button>
-                </md-list-item>
-                <br>
-                <md-list-item><md-button ui-sref="home">Home</md-button></md-list-item>
-                <br>
-                <md-list-item><md-button ui-sref="blog">Blog</md-button></md-list-item>
-                <br>
-                <md-list-item><md-button ui-sref="about">About</md-button></md-list-item>
-                <br>
-            </md-list>
-        </md-sidenav>
-
-    <md-content id="content" flex layout="row" ng-controller="mainController as menu">
-        <md-button class="menu" ng-click="menu.toggleNavigation()" hide-gt-sm>
-            <md-icon md-svg-icon="menu" aria-label="Menu"></md-icon>
-        </md-button>
-        <!-- INJECTED CONTENT GOES HERE -->
-        <div class="injectContainer" ui-view></div>
-      
-    </md-content>
- </div>   
     
-
-<!-- JS (load angular, ui-router, and custom js file) -->
-  <script src="node_modules/angular/angular.min.js"></script>
-  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
-  <script src="node_modules/angular-aria/angular-aria.min.js"></script>
-  <script src="node_modules/angular-material/angular-material.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-  
-
-  <script src="app.js"></script>
-  <script src="services/Data.js"></script>
-  <script src="services/DataService.js"></script>
-
 </body>
+<footer>
+    <div class="social-media">
+    </div>
+    <div class="contact-form">
+        <h1 id="form-title">Contact Us</h1>
+        <div class="form-row">
+            <label>Name: </label> 
+            &#32;
+            <input type="text" name="contact-name">
+        </div>
+        <div class="form-row">
+            <label>Email: </label> 
+            &#32; 
+            <input type="text" name="contact-email">
+        </div>
+        <div class="form-row">
+            <label>Message: </label> 
+            &#32; 
+            <input id="form-message-box" type="text" name="contact-message">
+        </div>
+        <button id="submit-button">Send</button>
+        
+    </div>
+</footer>    
 </html>
+

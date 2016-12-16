@@ -1,114 +1,172 @@
-html, body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	background-color: #F4DAB3;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-.menu {
-	height: 5%;
-	
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-h1, h3 {
-	margin: auto;
-	font-weight: 500;
-	padding-left: 10%;
-	padding-bottom: 5%;
-	padding-top: 10%;
-	color: #E7E4E6;
-
-
+body {
+	line-height: 1;
 }
-
-p {
-	margin: auto;
-	font-weight: 500;
-	font-size: 18px;
-	padding-bottom: 10%;
-	color: #E7E4E6;
-
+ol, ul {
+	list-style: none;
 }
-
-a {
-	color: #E7E4E6;
+blockquote, q {
+	quotes: none;
 }
-
-md-list-item > a {
-	width: 100%;
-	text-align: left !important;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-md-list-item > md-button {
-	text-align: right !important;
-}
-
-md-list-item > a > span {
-	color: #E7E4E6;
-}
-
-md-sidenav {
-	background-color: #3D442F;
-}
-
-md-content {
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 5px;
-	background-color: #ABC2DB;
-}
-
-img {
-	border-radius: 10%;
-	padding: 1%;
-	background-color: #3D442F;
-	margin-left: 5%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-
-.md-headline {
-	margin: auto;
-	color: #E7E4E6;
-
-}
-
-.contactInfo {
-	margin-left: 12.5%;
-	margin-top: 6.5%;
-	height: 80%;
-	border: 20px;
-	border-color: #3D442F;
-	border-radius: 5%;
-}
-
-div.injectContainer {
-	width: 100% !important;
-	height: 100% !important;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 
 
-md-card-actions {
-	color: #E7E4E6;
+
+
+
+
+
+body {
+	height: 800px;
+	background-image: url(images/penguins-ice.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-md-card {
-	margin: auto;
-	background-color: #7691B5;
-	width: 100%!important;
-	margin-bottom: 1%;
-	margin-top: 1%;
+.logo {
+	float: left;
+	font-size: 30px;
+	margin-left: 15px;
+	margin-top: 15px;
+	text-decoration: none;
+	color: #222222;
 }
 
-md-card-title-text {
+.logo:hover {
+	text-decoration: underline;
+	color: #dddddd;
+}
+
+nav {
+	float: right;
+	font-size: 25px;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #222222;
+	padding-left: 15px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: #dddddd;
+}
+
+#company-name {
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	font-size: 60px;
+	color: #222222;
+}
+
+#company-slogan-1 {
+	text-align: center;
+	clear: both;
+	margin-top: -10px;
+	font-size: 25px;
+	color: #222222;
 
 }
 
-md-card-content {
-	margin: auto;
-	width: 90%;
-	margin-bottom: 2%;
+#company-slogan-2 {
+	text-align: center;
+	clear: both;
+	margin-top: -25px;
+	font-size: 25px;
+	color: #222222;
+
 }
+
+footer {
+	height: 350px;
+	background-color: #888888;
+	margin-top: 800px;
+}
+
+.contact-form {
+	padding-top: 45px;
+}
+
+#form-title {
+	margin-left: 55%;
+	font-size: 25px;
+	margin-top: -25px;
+}
+
+.form-row {
+	clear: both;
+	padding-top: 10px;
+
+
+}
+
+.form-row label {
+	margin-left: 40%;
+	color: #222222;
+	display: inline-block;
+	width: 100px;
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+.form-row input {
+	display: inline-block;
+	width: 400px;
+	height: 25px;
+}
+
+#form-message-box {
+	height: 110px;
+	margin-top: 10px;
+}
+
+#submit-button {
+	margin-left: 1077px;
+	margin-top: 20px;
+	height: 30px;
+	width: 100px;
+	font-size: 15px;
+}
+
