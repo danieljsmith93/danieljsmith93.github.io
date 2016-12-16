@@ -61,6 +61,7 @@ body {
 	background-size: cover;
 }
 
+/* Navigation Section Start */
 .logo {
 	float: left;
 	font-size: 30px;
@@ -73,6 +74,7 @@ body {
 .logo:hover {
 	text-decoration: underline;
 	color: #dddddd;
+	font-size: 35px;
 }
 
 nav {
@@ -92,7 +94,9 @@ nav a:hover {
 	text-decoration: underline;
 	color: #dddddd;
 }
+/* End Navigation */
 
+/* Homepage Section Start */
 #company-name {
 	text-align: center;
 	clear: both;
@@ -125,35 +129,106 @@ footer {
 	margin-top: 800px;
 }
 
+.footer-topics {
+
+}
+/* End Homepage */
+
+/* Information Section Start */
+.information {
+	padding-top: 50px;
+	margin-bottom: -325px;
+	max-width: 350px;
+	margin-left: 250px;
+	margin-top: -250px;
+}
+
+.information-title {
+	margin-left: 30px;
+	font-size: 25px;
+	margin-top: -25px;
+	text-decoration: underline;
+	max-width: 350px;
+}
+
+.information-picture {
+	max-width: 350px;
+}
+
+#personal-picture {
+	margin: 50px;
+	border-radius: 5%;
+	max-width: 350px;
+	
+}
+
+.contact-information {
+	max-width: 350px;
+}
+
+.information-row {
+	margin-left: 30px;
+	font-size: 20px;
+	max-width: 350px;
+	padding-top: 25px;
+	 
+}
+/* End Information */
+
+/* Social Media Section Start */
+.social-media {
+	padding-top: 50px;
+	margin-left: 800px;
+	margin-bottom: -300px;
+	max-width: 350px;
+	margin-top: 90px;
+}
+
+.social-media-title {
+    font-size: 25px;
+    margin-top: -25px;
+    text-decoration: underline;
+}
+
+.social-media-row {
+	padding-top: 30px;
+	font-size: 20px;
+}
+/* End Social Media */
+
+/* Contact Form Section Start */
 .contact-form {
-	padding-top: 45px;
+	padding-top: 10px;
+	margin-left: 1200px;
+	margin-bottom: 0px;
+	max-width: 600px;
 }
 
 #form-title {
-	margin-left: 55%;
+	margin-left: 200px;
 	font-size: 25px;
-	margin-top: -25px;
+	margin-top: 10px;
+	text-decoration: underline;
 }
 
 .form-row {
-	clear: both;
-	padding-top: 10px;
-
+	padding-top: 20px;
+	max-width: 600px;
 
 }
 
 .form-row label {
-	margin-left: 40%;
+	margin-left: -50px;
 	color: #222222;
 	display: inline-block;
 	width: 100px;
-	padding-top: 15px;
+	padding-top: 10px;
 	font-size: 20px;
 }
 
 .form-row input {
 	display: inline-block;
-	width: 400px;
+	width: 500px;
 	height: 25px;
 }
 
@@ -163,10 +238,10 @@ footer {
 }
 
 #submit-button {
-	margin-left: 1077px;
-	margin-top: 20px;
+	margin-left: 460px;
+	margin-top: 10px;
 	height: 30px;
 	width: 100px;
 	font-size: 15px;
 }
-
+/* End Contact Form */
