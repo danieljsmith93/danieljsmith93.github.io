@@ -3,6 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body ng-app="BlankApp" ng-cloak>
   <!--
@@ -27,17 +29,99 @@
   </md-toolbar>
   
   <md-content layout-padding layout="column">
-    <div class="banner" layout="row">
+    
+    <div class="banner" layout="column">
+      <span flex></span>
+      
       <div class="brand" layout="column">
         <p>Service a Service</p>
         <p>We Service you by Servicing your Services!</p>
       </div>
+      
       <span flex></span>
+      
       <md-button class="md-raised" aria-label="View Services">
         View Services
       </md-button>
+      
+      <span flex></span>
     </div>
 
+    <md-divider></md-divider>
+
+    <div class="benefits" layout="column">
+      <div class="benefit-cards" layout="row" layout-xs="column">
+        <md-card class="benefit-card">
+          <md-card-content>
+            <h1>Increase Revenue</h1>
+          </md-card-content>
+          
+          <md-card-footer>
+            Card footer
+          </md-card-footer>
+        </md-card>
+
+        <md-card class="benefit-card">
+          <md-card-content>
+            <h1>Easy Marketing</h1>
+          </md-card-content>
+          
+          <md-card-footer>
+            Card footer
+          </md-card-footer>
+        </md-card>
+
+        <md-card class="benefit-card">
+          <md-card-content>
+            <h1>Fast Growth</h1>
+          </md-card-content>
+          
+          <md-card-footer>
+            Card footer
+          </md-card-footer>
+        </md-card>
+      </div>
+    </div>
+
+    <md-divider></md-divider>
+
+    <div class="testimonials" layout="column">
+      <div class="testimonial">
+        <p>Service a Service helped my business get off the ground and earning money. I had no prior experience running a company and had been relying mainly on luck to get clients. Now however, we have real data to make educated decisions from and our revenue is seeing the benefits.</p>
+        <h3>- Paul Pauly</h3>
+      </div>
+      <div class="testimonial">
+        <p>Dealing mainly with wedding photography, I wanted to explore new markets and potential customers while not mixing my brand with the new business ventures. Service a Service helped me launch a marketing campaign with a brand and approach separate from my own and allowed me to test business strategies at a low risk to my main business.</p>
+        <h3>- Bilal Akhtar</h3>
+      </div>
+      <div class="testimonial">
+        <p>My bike business was heading downhill before reaching out to Service a Service for help. They modernized by business by setting me up with a website and sat down with me to discuss new strategies to attract potential clients. Since then, we have been able to bring our business back and build better relations with our customers so they keep coming back.</p>
+        <h3>- Bill Biker</h3>
+      </div>
+    </div>
+
+    <md-divider></md-divider>
+
+    <div class="footer" layout="row">
+      <div class="footer-left">
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+      </div>
+    </div>
   </md-content>
   
   <!-- Angular Material requires Angular.js Libraries -->
@@ -54,7 +138,10 @@
     /**
      * You must include the dependency on 'ngMaterial' 
      */
-    angular.module('BlankApp', ['ngMaterial']);
+    angular.module('BlankApp', ['ngMaterial'])
+      .config(function($mdThemingProvider) {
+        $mdThemingProvider.disableTheming();
+      });
   </script>
   
 </body>
