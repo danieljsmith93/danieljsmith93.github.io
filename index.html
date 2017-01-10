@@ -1,85 +1,54 @@
-<!DOCTYPE html>
-
-<html lang="en">
+<html lang="en" >
 <head>
-    <title>Daniel Smith Development</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 </head>
-<body>
-    <div class="header">
-        <span  class="logo">
-            <a class="logo" href="index.html">
-                &#60; &#32; D &#32; &#62; &#32; S &#32; &#60; &#32; &#47; D &#32; &#62;
-            </a>
-        </span>
-        <nav>
-            <a href="#">About</a>
-            <a href="portfolio.html">Projects</a>
-            <a href="blog.html">Blog</a>
-            <a href="#">Contact</a>
-            <a href="admin.html">Login</a>
-        </nav>
-    </div>
-    <div class="main">
-        <h1 id="company-name">Daniel Smith Development</h1>
-        <br>
-        <h3 id="company-slogan-1">Development when you need it.</h3>
-        <br><br>
-        <h3 id="company-slogan-2">Wherever you need it.</h3>
-    </div>
+<body ng-app="BlankApp" ng-cloak>
+  <!--
+    Your HTML content here
+  -->  
+  <div class="navigation">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button aria-label="Side Nav">
+          D.S.D.
+        </md-button>
+        <h2>
+          <span>Daniel Smith Development</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-raised" aria-label="Learn More">
+          Learn More
+        </md-button>
+        <md-button class="md-fab md-mini" aria-label="Sign Up">
+          Sign Up
+        </md-button>
+      </div>
+    </md-toolbar>
+  </div>
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
 
-    
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('BlankApp', ['ngMaterial']);
+  </script>
+  
 </body>
-<footer>
-     <div>
-        <img id="personal-picture" src="images/profile-pic.jpg" width=150 height=150>
-    </div>
-    <div class="information">
-        <h1 class="information-title">Information</h1>
-        <div class="information-picture">
-            <div class="contact-information">    
-                <div class="information-row">
-                    Daniel Smith
-                </div>
-                <div class="information-row">www.danielsmithdevelopment.com</div>
-                <div class="information-row">danieljsmith93@gmail.com</div>
-                <div class="information-row">747-234-7307</div>
-            </div>
-           
-            
-        </div>
-        
-    </div>
-    <div class="social-media">
-        <h1 class="social-media-title">Follow Us</h1>
-        <div class="social-media-row">Facebook</div>
-        <div class="social-media-row">Github</div>
-        <div class="social-media-row">Twitter</div>
-        <div class="social-media-row">Tumblr</div>
-        <div class="social-media-row">Pinterest</div>
-    </div>
-    <div class="contact-form">
-        <h1 id="form-title">Contact Us</h1>
-        <div class="form-row">
-            <label>Name: </label> 
-            <input type="text" name="contact-name">
-        </div>
-        <div class="form-row">
-            <label>Email: </label> 
-            <input type="text" name="contact-email">
-        </div>
-        <div class="form-row">
-            <label>Message: </label> 
-            <input id="form-message-box" type="text" name="contact-message">
-        </div>
-        <button id="submit-button">Send</button>
-        
-    </div>
-
-</footer>    
 </html>
 
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
