@@ -1,5 +1,5 @@
 html {
-	background-color: #aaa;
+	background-color: #7893B3;
 }
 
 a {
@@ -9,12 +9,23 @@ a {
 	font-size: 1em;
 }
 
+a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
 ul {
 	list-style: none;
 }
 
-.md-button, md-card, .testimonial {
-	background-color: #8cf; 
+
+md-card, .testimonial {
+	background-color: #FAE0C3; 
+}
+
+
+.md-button {
+	background-color: #EDEAEB;
 }
 
 .md-button:hover {
@@ -22,11 +33,11 @@ ul {
 }
 
 md-toolbar, .banner, .benefits, .testimonials{
-	background-color: #b84;
+	background-color: #B8B8B8;
 }
 
 .footer {
-	background-color: #888;
+	background-color: #4E5640;
 	padding-left: 10%;
 }
 
@@ -55,7 +66,6 @@ md-card {
 	height: 300px;
 
 }
-
 
 
 
