@@ -34,7 +34,9 @@ ul {
 }
 
 md-card, .testimonial {
-	background-color: #FAE0C3; 
+	background-color: #FAE0C3;
+	padding: 3%;
+	
 }
 
 
@@ -60,15 +62,9 @@ md-toolbar, .banner, .benefits, .testimonials{
 	padding-left: 40%;
 }
 
-md-card, .testimonial {
-	padding: 3%;
 
-}
-
-
-
-.testimonials p {
-	font-size: 1.2em;
+.testimonials md-card-content p {
+	font-size: 1.5em;
 }
 
 md-card {
