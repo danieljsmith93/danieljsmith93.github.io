@@ -1,6 +1,8 @@
 html {
-	background-color: #7893B3;
+
 }
+
+
 
 a {
 	text-decoration: none;
@@ -18,42 +20,93 @@ ul {
 	list-style: none;
 }
 
+md-toolbar {
+	background-color: #444;
+}
+
+.md-toolbar-tools {
+
+}
+
+
 .banner {
 	background-image: url("images/wireframes.jpg");
-	width: 98%;
-	height: 500px;
+	width: 100%;
+	height: 50%;
+	background-size: 100% 125%;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	margin: 1%;
-	margin-right: -5%;
+	z-index: 2;
+	
 }
+
+.banner-bottom {
+	width: 100%;
+	height: 50%;
+	background-color: #48b;
+	margin-top: -20vh;
+	z-index: 2;
+}
+
+.layover {
+	z-index: 100;
+}
+
+.company-name {
+	font-family: futura;
+	font-size: 2.5em;
+	color: #bbb;
+	background-color: #444;
+	margin-left: 15%;
+	margin-top: 10%;
+	width: 70%;
+	height: 25%;
+	text-align: center;
+	padding-top: 1%;
+	z-index: 2;
+
+}
+
+.headshot-container {
+	background-color: #444;
+	height: 320px;
+	width: 220px;
+	margin-top: -40%;
+	max-width: 220px;
+	max-height: 320px;
+
+}
+
+#headshot {
+	width: 200px;
+	height: 300px;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+
+
+.social-feed {
+	width: 100vw;
+	height: 100vh;
+	background-color: #444;
+	margin-top: 0vh;
+	margin-right: 5%;
+	float: right;
+	z-index: 2;
+}
+
+.social-item {
+	background-color: #888;
+	width: 90vw;
+	height: 10%;
+	color: #fff;
+}
+
+
 
 .brand p {
 	text-align: center;
 	font-size: 1.5em;
-}
-
-#company-title {
-	font-size: 5em;
-	font-weight: bolder;
-	color: #DE9078;
-	margin-top: -25%;
-	margin-left: -18%;
-}
-
-#company-slogan {
-	font-weight:bold;
-	margin-top: -11%;
-	color: #DE9078;	
-	margin-left: -37%;
-}
-
-.engage-button {
-	width: 160px;
-	height: 40px;
-	margin-left: 70%;
-	margin-right: 10%;
-	margin-bottom: -20%;
 }
 
 .benefit {
@@ -62,8 +115,9 @@ ul {
 }
 
 md-card, .testimonial {
-	background-color: #FAE0C3;
+	background-color: #888;
 	padding: 2%;
+	margin: 5%;
 	
 }
 
@@ -76,12 +130,18 @@ md-card, .testimonial {
 	background-color: #BACEE1;
 }
 
-md-toolbar, .banner, .benefit-cards, .testimonials{
-	background-color: #B8B8B8;
+.benefit-cards {
+	background-color: #b48;
+	height: 100%;
+	width: 100%;
+}
+
+.testimonials {
+	background-color: #4b8;
 }
 
 .footer {
-	background-color: #BACEE1;
+	background-color: #444;
 }
 
 
@@ -90,7 +150,7 @@ md-toolbar, .banner, .benefit-cards, .testimonials{
 }
 
 md-card {
-	height: 300px;
+	height: 30%;
 
 }
 
@@ -98,8 +158,7 @@ md-card {
 
 @media screen and (min-width: 768px) {
 	md-card {
-		width: 98%;
-		height: 300px;
+		
 	}
 	
 	.testimonials md-card-content p {

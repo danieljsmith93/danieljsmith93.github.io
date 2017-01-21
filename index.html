@@ -11,43 +11,62 @@
     Your HTML content here
   -->  
   <md-toolbar>
-    <div class="md-toolbar-tools">
+    <div class="md-toolbar-tools" layout="row" layout-align="space-around center">
       <md-button aria-label="Side Nav">
-        S.a.S.
-      </md-button>
-      <span flex></span>
-      <md-button class="md-raised" aria-label="Learn More">
-        Learn More
-      </md-button>
-      <md-button class="md-raised" aria-label="Sign Up">
-        Sign Up
-      </md-button>
+        &#60; D &#62; &#60; S &#62; &#60; D &#62;
+      </md-button>      
     </div>
   </md-toolbar>
   
-  <md-content layout-padding layout="column">
+  <md-divider></md-divider>
+
+  <md-content layout="column">
     
-    <div class="banner" layout="column">
-      <span flex></span>
+    <div class="banner">
+      <div layout="column" class="company-name">
+        <span>
+          Daniel Smith
+        </span>
+        <span>
+          Development
+        </span>
+      </div> 
+    </div>
+
+    <div class="layover" layout="column"  layout-align="space-around center">
       
-   
-   	<div class="brand" layout="column">
-     	<p id="company-title">Service a Service</p>
-     	<p id="company-slogan">We Service you by Servicing your Services!</p>
-   	</div>
- 
+      <div class="headshot-container">
+        <img id="headshot" ng-src="images/headshot.jpg">
+      </div>
       
-      <span flex></span>
-      
-      <md-button class="md-raised engage-button" aria-label="View Services">
-        View Services
-      </md-button>
-      
-      <span flex></span>
+    </div> 
+    
+    <md-divider></md-divider>
+
+    <div class="banner-bottom">
     </div>
 
     <md-divider></md-divider>
 
+    <div class="social-feed" layout="column" layout-align="space-around center">
+      <div class="social-item" >
+        <a href="#">Tweet</a>
+      </div> 
+      <div class="social-item" >
+        <a href="#">Tweet</a>
+      </div> 
+      <div class="social-item" >
+        <a href="#">Tweet</a>
+      </div> 
+      <div class="social-item" >
+        <a href="#">Tweet</a>
+      </div> 
+      <div class="social-item" >
+        <a href="#">Tweet</a>
+      </div> 
+    </div>
+
+    <md-divider></md-divider>
 
       <div class="benefit-cards" layout="row" layout-xs="column">
         <md-card class="benefit-card">
