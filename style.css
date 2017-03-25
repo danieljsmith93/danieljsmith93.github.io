@@ -40,7 +40,7 @@ md-toolbar {
 }
 
 .sidebar {
-	width: 280px;
+	width: 250px;
 	height: 100%;
 	background: rgba(255, 255, 255, .7);
 	z-index: 10;
@@ -50,8 +50,8 @@ md-toolbar {
 }
 
 .logo {
- 	font-size: 2em;
- 	margin-left: 15px;
+ 	font-size: 1.75em;
+ 	margin-left: 10px;
  	margin-top: 25px;
  	font-weight: bold;
 }
@@ -78,7 +78,7 @@ md-toolbar {
 .profilePicture {
 	width: 200px;
 	height: 300px;
-	margin-left: 40px;
+	margin-left: 25px;
 }
 
 
