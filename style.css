@@ -33,7 +33,7 @@ md-toolbar {
 	background-image: url("images/MobileSiteBackground.png");
 	width: 100%;
 	height: 100%;
-	background-repeat: repeat-y;
+	background-repeat: cover;
 	background-size: 100% 125%;
 	z-index: 0;
 	
