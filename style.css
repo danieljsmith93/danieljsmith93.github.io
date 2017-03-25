@@ -32,146 +32,68 @@ md-toolbar {
 .banner {
 	background-image: url("images/MobileSiteBackground.png");
 	width: 100%;
-	height: 50%;
-	background-size: 100% 125%;
-	background-repeat: no-repeat;
-	z-index: 2;
-	
-}
-
-.banner-bottom {
-	width: 100%;
-	height: 50%;
-	background-color: #48b;
-	margin-top: -20vh;
-	z-index: 2;
-}
-
-.layover {
-	z-index: 100;
-}
-
-.company-name {
-	font-family: futura;
-	font-size: 2.5em;
-	color: #bbb;
-	background-color: #444;
-	margin-left: 15%;
-	margin-top: 10%;
-	width: 70%;
-	height: 25%;
-	text-align: center;
-	padding-top: 1%;
-	z-index: 2;
-
-}
-
-.headshot-container {
-	background-color: #444;
-	height: 320px;
-	width: 220px;
-	margin-top: -40%;
-	max-width: 220px;
-	max-height: 320px;
-
-}
-
-#headshot {
-	width: 200px;
-	height: 300px;
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-
-
-.social-feed {
-	width: 100vw;
-	height: 100vh;
-	background-color: #444;
-	margin-top: 0vh;
-	margin-right: 5%;
-	float: right;
-	z-index: 2;
-}
-
-.social-item {
-	background-color: #888;
-	width: 90vw;
-	height: 10%;
-	color: #fff;
-}
-
-
-
-.brand p {
-	text-align: center;
-	font-size: 1.5em;
-}
-
-.benefit {
-	text-align: center;
-	margin-top: 35%;
-}
-
-md-card, .testimonial {
-	background-color: #888;
-	padding: 2%;
-	margin: 5%;
-	
-}
-
-
-.md-button {
-	background-color: #EDEAEB;
-}
-
-.md-button:hover {
-	background-color: #BACEE1;
-}
-
-.benefit-cards {
-	background-color: #b48;
 	height: 100%;
-	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 125%;
+	z-index: 0;
+	
 }
 
-.testimonials {
-	background-color: #4b8;
+.sidebar {
+	width: 300px;
+	height: 100%;
+	background: rgba(255, 255, 255, .7);
+	z-index: 10;
+	margin-top: 0%;
+	position: absolute;
+	opacity: 80%;
+}
+
+.logo {
+ 	font-size: 2em;
+ 	margin-left: 25px;
+ 	margin-top: 25px;
+ 	font-weight: bold;
+}
+
+.companyName {
+ 	font-size: 2em;
+ 	margin-left: 0px;
+ 	margin-top: 50px;
+ 	line-height: 10px;
+ 	font-weight: bold;
+ 	text-align: center;
+}
+
+.navMenu {
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-left: 5px;
 }
 
 .footer {
 	background-color: #444;
 }
 
-
-.testimonials md-card-content p {
-	font-size: 1em;
+.profilePicture {
+	width: 200px;
+	height: 300px;
+	margin-left: 50px;
 }
-
-md-card {
-	height: 50%;
-
-}
-
 
 
 @media screen and (min-width: 768px) {
-	md-card {
-		
-	}
+	
 
 	.banner {
 		background-image: url("images/DesktopSiteBackground.png");
 		width: 100%;
-		height: 50%;
+		height: 100%;
 		background-size: 100% 125%;
 		background-repeat: no-repeat;
 		z-index: 2;
 		
 	}
 	
-	.testimonials md-card-content p {
-		font-size: 1.5em;
-	}	
 }

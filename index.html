@@ -10,125 +10,36 @@
   <!--
     Your HTML content here
   -->  
-  <md-toolbar>
-    <div class="md-toolbar-tools" layout="row" layout-align="space-around center">
-      <md-button aria-label="Side Nav">
-        &#60; D &#62; &#60; S &#62; &#60; D &#62;
-      </md-button>      
-    </div>
-  </md-toolbar>
   
-  <md-divider></md-divider>
 
   <md-content layout="column">
     
     <div class="banner">
-      <div layout="column" class="company-name">
-        <span>
-          Daniel Smith
-        </span>
-        <span>
-          Development
-        </span>
-      </div> 
+      
     </div>
 
-    <div class="layover" layout="column"  layout-align="space-around center">
-      
-      <div class="headshot-container">
-        <img id="headshot" ng-src="images/headshot.jpg">
-      </div>
-      
-    </div> 
+    <div class="sidebar">
+      <p class="logo">&lt; D &gt; &lt; S &gt; &lt; D &gt;</p>
+      <img class="profilePicture" src="images/headshot.jpg" />
+      <p class="companyName">Daniel Smith</p> 
+      <p class="companyName">Development</p>
+      <nav class="navMenu">
+        <ul>
+          <li><a href="#">&lt; HOME &gt;</a></li>
+          <li><a href="#">&lt; BLOG &gt;</a></li>
+          <li><a href="#">&lt; PORTFOLIO &gt;</a></li>
+          <li><a href="#">&lt; CONTACT &gt;</a></li>
+          <li><a href="#">&lt; MORE &gt;</a></li>
+        </ul>
+
+        
+      </nav>
+
+    </div>
+  
+
     
-    <md-divider></md-divider>
 
-    <div class="banner-bottom">
-    </div>
-
-    <md-divider></md-divider>
-
-    <div class="social-feed" layout="column" layout-align="space-around center">
-      <div class="social-item" >
-        <a href="#">Tweet</a>
-      </div> 
-      <div class="social-item" >
-        <a href="#">Tweet</a>
-      </div> 
-      <div class="social-item" >
-        <a href="#">Tweet</a>
-      </div> 
-      <div class="social-item" >
-        <a href="#">Tweet</a>
-      </div> 
-      <div class="social-item" >
-        <a href="#">Tweet</a>
-      </div> 
-    </div>
-
-    <md-divider></md-divider>
-
-      <div class="benefit-cards" layout="row" layout-xs="column">
-        <md-card class="benefit-card">
-          <md-card-content>
-            <h1 class="benefit">Increase Revenue</h1>
-          </md-card-content>
-         
-        </md-card>
-
-        <md-card class="benefit-card">
-          <md-card-content>
-            <h1 class="benefit">Easy Marketing</h1>
-          </md-card-content>
-         
-        </md-card>
-
-        <md-card class="benefit-card">
-          <md-card-content>
-            <h1 class="benefit">Fast Growth</h1>
-          </md-card-content>
-         
-        </md-card>
-      </div>
- 
-
-    <md-divider></md-divider>
-
-    <div class="testimonials" layout="column">
-      <md-card class="testimonial">
-      	<md-card-content>
-        	<p>Service a Service helped my barbershop gain business after we moved locations. 
-        	We had tried scheduling appointments before but didn't have the tools to manage 
-        	everything and began losing customers. Now however, we have an app for our business 
-        	that helps us manage our business and shows us our data to help make better business decisions.</p>
-        	<h3>- Martha</h3>
-        </md-card-content>
-      </md-card>
-      <md-card class="testimonial">
-      	<md-card-content>
-	        <p>Dealing mainly with wedding photography, I wanted to explore new markets and potential customers while not mixing my brand with the new business ventures. Service a Service helped me launch a marketing campaign with a brand and approach separate from my own and allowed me to test business strategies at a low risk to my main business.</p>
-    	    <h3>- Bilal Akhtar</h3>
-   	    </md-card-content>
-      </md-card>
-      <md-card class="testimonial">
-      	<md-card-content>
-	        <p>My bike business was heading downhill before reaching out to Service a Service for help. They modernized by business by setting me up with a website and sat down with me to discuss new strategies to attract potential clients. Since then, we have been able to bring our business back and build better relations with our customers so they keep coming back.</p>
-    	    <h3>- Bill Biker</h3>
-   	    </md-card-content>
-      </md-card>
-    </div>
-
-    <md-divider></md-divider>
-
-    <div class="footer" layout="row">
-       <ul>
-         <li>Name: <a href="#">Daniel Smith</a></li>
-         <li>Email: <a href="#">danielsmithdevelopment@gmail.com</a></li>
-         <li>Number: <a href="#">747-234-7307</a></li>
-         <li>Github: <a href="#">danieljsmith93@github.com</a></li>
-         <li>Twitter: <a href="#">@SecondsOfSmith</a></li>
-       </ul>
-    </div>
   </md-content>
   
   <!-- Angular Material requires Angular.js Libraries -->
