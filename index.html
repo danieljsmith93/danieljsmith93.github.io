@@ -3,42 +3,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-app="BlankApp" ng-cloak>
   <!--
     Your HTML content here
   -->  
-  
-
-    
-  <div class="banner">
-    <div class="sidebar">
-      <p class="logo">&lt; D &gt; &lt; S &gt; &lt; D &gt;</p>
-      <img class="profilePicture" src="images/headshot.jpg" />
-      <p class="companyName">Daniel Smith</p> 
-      <p class="companyName">Development</p>
-      <nav class="navMenu">
-        <ul>
-          <li><a href="#">&lt; HOME &gt;</a></li>
-          <li><a href="#">&lt; BLOG &gt;</a></li>
-          <li><a href="#">&lt; PORTFOLIO &gt;</a></li>
-          <li><a href="#">&lt; CONTACT &gt;</a></li>
-          <li><a href="#">&lt; MORE &gt;</a></li>
-        </ul>
-
-        
-      </nav>
-
-    </div>
+  <md-toolbar id="menuBar">
+    <img id="siteLogo" src="DSD_logo.png" width="300px">
+  </md-toolbar>
+  <div id="siteBanner">
+    <h1 id="siteName">Daniel Smith Development</h1>
   </div>
-
-  
-  
-
-    
-
+  <div id="mainContainer">
+    <img id="headshotPhoto" src="images/headshot.jpg" width="200px">
+    <ul id="navigationMenu">
+      <li class="navigationItem"><a class="navigationLink" href="#">Blog</a></li>
+      <li class="navigationItem"><a class="navigationLink" href="#">Portfolio</a></li>
+      <li class="navigationItem"><a class="navigationLink" href="#">Social</a></li>
+      <li class="navigationItem"><a class="navigationLink" href="#">Contact</a></li>
+    </ul>
+  </div>
   
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
@@ -54,10 +39,7 @@
     /**
      * You must include the dependency on 'ngMaterial' 
      */
-    angular.module('BlankApp', ['ngMaterial'])
-      .config(function($mdThemingProvider) {
-        $mdThemingProvider.disableTheming();
-      });
+    angular.module('BlankApp', ['ngMaterial']);
   </script>
   
 </body>

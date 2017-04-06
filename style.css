@@ -1,98 +1,110 @@
-html {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-
-
-a {
-	text-decoration: none;
-	color: #000;
-	font-weight: bold;
-	font-size: 1em;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-a:hover {
-	text-decoration: underline;
-	color: #ffffff;
+body {
+	line-height: 1;
 }
-
-ul {
+ol, ul {
 	list-style: none;
 }
-
-md-toolbar {
-	background-color: #444;
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.md-toolbar-tools {
-
+/* 
+	Custom CSS Below
+*/
+#menuBar {
+	background-color: #000000;
+	z-index: 100;
+	position: fixed;
 }
 
+#siteLogo {
+	align-self: center;
+	margin-top: 10px;
+}
 
-.banner {
-	background-image: url("images/MobileSiteBackground.png");
+#siteBanner {
+	background-color: #cccccc;
+	height: 100px;
 	width: 100%;
-	height: 100%;
-	background-repeat: repeat;
-	background-size: 100% 125%;
-	z-index: 0;
-	
+	padding-top: 7vh;
 }
 
-.sidebar {
-	width: 250px;
-	height: 100%;
-	background: rgba(255, 255, 255, .7);
-	z-index: 10;
-	margin-top: 0%;
-	position: absolute;
-	opacity: 80%;
+#siteName {
+	text-align: center;
+	font-size: 30px;
+	font-family: futura;
+	font-weight: bolder;
+	padding-top: 20px;
 }
 
-.logo {
- 	font-size: 1.75em;
- 	margin-left: 10px;
- 	margin-top: 25px;
- 	font-weight: bold;
+#mainContainer {
+	background-color: #666666;
+	height: 85vh;
 }
 
-.companyName {
- 	font-size: 2em;
- 	margin-left: 0px;
- 	margin-top: 50px;
- 	line-height: 10px;
- 	font-weight: bold;
- 	text-align: center;
+#headshotPhoto {
+	margin-left: 25%;
+	margin-top: 10%;
 }
 
-.navMenu {
-	display: inline-block;
-    vertical-align: middle;
-    line-height: 50px;
+#navigationMenu {
+	margin-top: 10%;
+	line-height: 50px;
 }
 
-.footer {
-	background-color: #444;
+.navigationItem {
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #cccccc;
+	margin-top: 10px;
 }
 
-.profilePicture {
-	width: 200px;
-	height: 300px;
-	margin-left: 25px;
+.navigationLink {
+	color: #000000;
+	text-decoration: underline;
+	margin-left: 40%;
 }
 
-
-@media screen and (min-width: 768px) {
-	
-
-	.banner {
-		background-image: url("images/DesktopSiteBackground.png");
-		width: 100%;
-		height: 100%;
-		background-size: 100% 125%;
-		background-repeat: no-repeat;
-		z-index: 2;
-		
-	}
-	
+.navigationLink:hover {
+	color: #ffffff;
+	margin-left: 42%;
 }
