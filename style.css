@@ -52,8 +52,6 @@ table {
 */
 #menuBar {
 	background-color: #000000;
-	z-index: 100;
-	position: fixed;
 }
 
 #siteLogo {
@@ -65,7 +63,6 @@ table {
 	background-color: #cccccc;
 	height: 100px;
 	width: 100%;
-	padding-top: 7vh;
 }
 
 #siteName {
@@ -78,7 +75,7 @@ table {
 
 #mainContainer {
 	background-color: #666666;
-	height: 85vh;
+	height: 100vh;
 }
 
 #headshotPhoto {
