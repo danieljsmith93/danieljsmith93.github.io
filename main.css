@@ -2,7 +2,10 @@ body > div > div > header > div.mdl-layout__drawer-button {
 	display: none;
 }
 
-
+#toolbarLogo {
+	margin: auto;
+	height: 50px;
+}
 
 /* ----------- Mobile ----------- */
 @media only screen
@@ -18,8 +21,12 @@ body > div > div > header > div.mdl-layout__drawer-button {
 		font-size: 1.75em;
 		color: #F6643E;
 	}
+	#toolbar {
+		height: 100px;
+	}
 	#toolbarLogo {
 		margin: auto;
+		height: 100px;
 	}
 	#toolbarSpacer, 
 	#toolbarNav {
@@ -100,16 +107,16 @@ body > div > div > header > div.mdl-layout__drawer-button {
 	/* Navigation Mobile */
 	body > div > div > header > div.mdl-layout__drawer-button {
 		display: block;
-		margin-top: 25px;
-		height: 80px;
+		height: 40px;
 	}
 	body > div > div > header > div.mdl-layout__drawer-button > i {
-		margin-top: 25px;
-		font-size: 1.75em;
+		margin-top: 5px;
+		font-size: 1.4em;
 		color: #F6643E;
 	}
 	#toolbarLogo {
 		margin: auto;
+		height: 50px;
 	}
 	#toolbarSpacer, 
 	#toolbarNav {
