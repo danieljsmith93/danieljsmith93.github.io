@@ -18,15 +18,15 @@ body > div > div > header > div.mdl-layout__drawer-button {
 	}
 	body > div > div > header > div.mdl-layout__drawer-button > i {
 		margin-top: 25px;
-		font-size: 1.75em;
+		font-size: 3em;
 		color: #F6643E;
 	}
 	#toolbar {
-		height: 100px;
+		height: 200px;
 	}
 	#toolbarLogo {
 		margin: auto;
-		height: 100px;
+		height: 200px;
 	}
 	#toolbarSpacer, 
 	#toolbarNav {
