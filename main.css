@@ -10,9 +10,12 @@ body > div > div > header > div.mdl-layout__drawer-button {
 	/* Navigation Mobile */
 	body > div > div > header > div.mdl-layout__drawer-button {
 		display: block;
+		margin-top: 25px;
+		height: 80px;
 	}
 	body > div > div > header > div.mdl-layout__drawer-button > i {
-		margin-top: 12px;
+		margin-top: 25px;
+		font-size: 1.75em;
 		color: #F6643E;
 	}
 	#toolbarLogo {
