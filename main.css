@@ -1,3 +1,7 @@
+body {
+	font-size: 32px;
+}
+
 body > div > div > header > div.mdl-layout__drawer-button {
 	display: none;
 }
