@@ -1,99 +1,96 @@
 <head>
-	<link rel="import" href="./html/header.html">
+	<title>DS Dev</title>
+
+	<link rel="stylesheet" href="./main.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-deep_orange.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-<link rel="import" href="./html/navigation.html">
-	<!-- Always shows a header, even in smaller screens. -->
-<main class="mdl-layout__content">
-	<div class="mainSection .col-width-12">
-    	
-		<h1 class="col-offset-1 row-offset-1" style="margin-top: auto; padding-top: 11.11vh; font-family: playfair-display; font-weight: bolder; font-size: 8em; line-height: 100px;">
-			Design,<br>
-			Develop,<br>
-			Deliver
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    
+    <div class="mdl-layout__header-row mdl-js-ripple-effect">
+
+    	<img id="toolbarLogo" src="./siteLogo.svg" alt="" style=" margin-top: 0;" height="50px">
+    	<div id="toolbarSpacer" class="mdl-layout-spacer"></div>
+		<nav id="toolbarNav" class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="">Link</a>
+	      <a class="mdl-navigation__link" href="">Link</a>
+	      <a class="mdl-navigation__link" href="">Link</a>
+	      <a class="mdl-navigation__link" href="">Link</a>
+	    </nav>
+		
+      
+    </div>
+  </header>
+  <div class="mdl-layout__drawer ">
+    <span class="mdl-menu__item--full-bleed-divider">
+    	<h1 style="font-size: 2em; margin-left: 2vw;">
+	    	Daniel Smith<br> 
+	    	Development
 		</h1>
-		<h2 class="col-offset-1" style="font-family: playfair-display; font-weight: bolder; font-style: italic; font-size: 4em; line-height: 100px;">
-			Let Your Content Speak
-		</h2>
-		<div class="col-width-5 col-offset-1 row-height-1" style="background-color: rgb(0,150,136);">
-		</div>
-		<div class="col-width-3 col-offset-8 row-height-5" style="background-color: rgb(0,150,136); margin-top: -60vh;">
-		</div>
-
-	</div>
-    <div class="projectsSection col-width-12">		
-		<div class="mdl-grid" >
-		  	<div class="mdl-layout-spacer"></div>
-			<div class="mdl-cell mdl-cell--3-col" style="margin-top: 20vh;">
-		    	<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-		      		<div class="mdl-card__title">
-		        		<h2 class="mdl-card__title-text">Welcome</h2>
-		      		</div>
-		      		<div class="mdl-card__supporting-text">
-		        		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		        		Mauris sagittis pellentesque lacus eleifend lacinia...
-		      		</div>
-		      		
-		      		<div class="mdl-card__menu">
-		        		<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-		          			<i class="material-icons">share</i>
-		        		</button>
-		      		</div>
-		    	</div>
-		  	</div>
-		  	<div class="mdl-layout-spacer"></div>
-		  	<div class="mdl-cell mdl-cell--3-col" style="margin-top: 20vh;">
-		    	<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-		      		<div class="mdl-card__title">
-		        		<h2 class="mdl-card__title-text">
-		        			Welcome
-		        		</h2>
-		      		</div>
-		      		<div class="mdl-card__supporting-text">
-		        		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		        		Mauris sagittis pellentesque lacus eleifend lacinia...
-		      		</div>
-		      		
-		      		<div class="mdl-card__menu">
-		        		<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-		          			<i class="material-icons">share</i>
-		        		</button>
-		      		</div>
-		    	</div>
-		  	</div>
-		  	<div class="mdl-layout-spacer"></div>
-			<div class="mdl-cell mdl-cell--3-col" style="margin-top: 20vh;">
-		    
-		    	<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-		      		<div class="mdl-card__title">
-		        		<h2 class="mdl-card__title-text">Welcome</h2>
-		      		</div>
-		      		<div class="mdl-card__supporting-text">
-		        		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		        		Mauris sagittis pellentesque lacus eleifend lacinia...
-		      		</div>
-		      		
-		      		<div class="mdl-card__menu">
-		        		<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-		          			<i class="material-icons">share</i>
-		        		</button>
-		      		</div>
-		    	</div>
-		  	</div>
-
-
-		</div>
-
-	
-
-		
-		
-	</div>
-    <div class="blogSection col-width-12"><!-- Your content goes here --></div>
-    <div class="skillsSection col-width-12"><!-- Your content goes here --></div>
-    <div class="tutorialSection col-width-12"><!-- Your content goes here --></div>
-    <div class="contactSection col-width-12"><!-- Your content goes here --></div>
-
+    </span>
+    <span class="mdl-menu__item--full-bleed-divider">
+    	<nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="">Link</a>
+	      <a class="mdl-navigation__link" href="">Link</a>
+	      <a class="mdl-navigation__link" href="">Link</a>
+	      <a class="mdl-navigation__link" href="">Link</a>
+	    </nav>
+    </span>
+    
+  </div>
+  <main class="mdl-layout__content">
+    <section id="heroSection">
+    	<div id="heroImage">
+    		<h1 id="siteSlogan">
+	    		Design,<br>
+				Develop,<br>
+				Deliver.
+	    	</h1>
+    	</div>
+    	<div id="heroText">
+    		<p id="siteTagline">
+    			We work with you to take your business to the next level and guide you along the way.
+    		</p>
+    		<!-- Accent-colored raised button -->
+			<button id="callToActionButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+			  Learn More
+			</button>
+    	</div>
+    </section>
+    <section id="featureSection">
+    	<div id="featuresLeft">
+    		<div class="mdl-card mdl-shadow--2dp featureCard">
+    			<h3 class="cardTitle">Analytics</h3>
+    			<img src="./analytics.svg" style="margin-top: 10%;" height="30%" alt="">
+			</div>
+			<div class="mdl-card mdl-shadow--2dp featureCard">
+    			<h3 class="cardTitle">Design</h3>
+    			<img src="./design.svg" height="50%" alt="">
+			</div>
+			<div class="mdl-card mdl-shadow--2dp featureCard">
+    			<h3 class="cardTitle">Customization</h3>
+    			<img src="./customize.svg" height="40%" alt="">
+			</div>
+    	</div>
+    	<div id="featuresRight">
+    		<div class="mdl-card mdl-shadow--2dp featureCard">
+    			<h3 class="cardTitle">Payments</h3>
+    			<img src="./payments.svg" height="50%" alt="">
+			</div>
+			<div class="mdl-card mdl-shadow--2dp featureCard">
+    			<h3 class="cardTitle">Content</h3>
+    			<img src="./content.svg" height="45%" alt="">
+			</div>
+			<div class="mdl-card mdl-shadow--2dp featureCard">
+    			<h3 class="cardTitle">Mobile</h3>
+    			<img src="./mobile.svg" height="45%" alt="">
+			</div>
+    	</div>
+    </section>
   </main>
 </div>
 </body>

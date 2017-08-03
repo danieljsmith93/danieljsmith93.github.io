@@ -1,108 +1,89 @@
-/* Grid Classes */
-.col-width-1 {width: 8.33vw;}
-.col-width-2 {width: 16.66vw;}
-.col-width-3 {width: 25vw;}
-.col-width-4 {width: 33.33vw;}
-.col-width-5 {width: 41.66vw;}
-.col-width-6 {width: 50vw;}
-.col-width-7 {width: 58.33vw;}
-.col-width-8 {width: 66.66vw;}
-.col-width-9 {width: 75vw;}
-.col-width-10 {width: 83.33vw;}
-.col-width-11 {width: 91.66vw;}
-.col-width-12 {width: 100vw;}
-
-.row-height-1 {height: 11.11vh;}
-.row-height-2 {height: 22.22vh;}
-.row-height-3 {height: 33.33vh;}
-.row-height-4 {height: 44.44vh;}
-.row-height-5 {height: 55.55vh;}
-.row-height-6 {height: 66.66vh;}
-.row-height-7 {height: 77.77vh;}
-.row-height-8 {height: 88.88vh;}
-.row-height-9 {height: 100vh;}
-
-.col-offset-1 {margin-left: 8.33vw;}
-.col-offset-2 {margin-left: 16.66vw;}
-.col-offset-3 {margin-left: 25vw;}
-.col-offset-4 {margin-left: 33.33vw;}
-.col-offset-5 {margin-left: 41.66vw;}
-.col-offset-6 {margin-left: 50vw;}
-.col-offset-7 {margin-left: 58.33vw;}
-.col-offset-8 {margin-left: 66.66vw;}
-.col-offset-9 {margin-left: 75vw;}
-.col-offset-10 {margin-left: 83.33vw;}
-.col-offset-11 {margin-left: 91.66vw;}
-.col-offset-12 {margin-left: 100vw;}
-
-.row-offset-1 {margin-top: 11.11vh;}
-.row-offset-2 {margin-top: 22.22vh;}
-.row-offset-3 {margin-top: 33.33vh;}
-.row-offset-4 {margin-top: 44.44vh;}
-.row-offset-5 {margin-top: 55.55vh;}
-.row-offset-6 {margin-top: 66.66vh;}
-.row-offset-7 {margin-top: 77.77vh;}
-.row-offset-8 {margin-top: 88.88vh;}
-.row-offset-9 {margin-top: 100vh;}
-
-
-body > div > div > header > div.mdl-layout__drawer-button > i {
-	margin-top: 10px;
+body > div > div > header > div.mdl-layout__drawer-button {
+	display: none;
 }
 
-body > div > div > header > div.mdl-layout__header-row > nav > a,
-body > div > div > div.mdl-layout__drawer.is-visible > nav > a {
-	font-family: "Raleway";
-}
+/* ----------- Mobile ----------- */
+@media (max-width: 600px) {
+	/* Navigation Mobile */
+	body > div > div > header > div.mdl-layout__drawer-button {
+		display: block;
+	}
+	body > div > div > header > div.mdl-layout__drawer-button > i {
+		margin-top: 12px;
+		color: #F6643E;
+	}
+	#toolbarLogo {
+		margin: auto;
+	}
+	#toolbarSpacer, 
+	#toolbarNav {
+		display: none;
+	}
+	/* END Navigation Mobile */
 
-.mainSection, .blogSection, .tutorialSection {
-	height: 100vh;
-	background-color: #dddddd !important;
-}
+	/* Section 1 Mobile */
+	
 
-.projectsSection, .skillsSection, .contactSection {
-	height: 100vh;
-	background-color: rgb(0,150,136) !important;
-}
+	#heroSection {
+		height: 100vw;
+		width: 100vw;
+	}
+	#heroImage {
+		height: 66vw;
+		width: 100vw;
+	}
+	#heroText {
+		height: 33vw;
+		width: 100vw;
+		background-color: #00BED4;
+	}
+	#siteSlogan {
+		text-align: left;
+		margin-left: 10vw;
+		margin-top: 10vw;
+	}
+	#siteTagline {
+		margin: auto;
+		padding: 3%;
+		width: 80vw;
+	}
+	#callToActionButton {
+		margin-left: 33vw;
+	}
+	/* END Section 1 Mobile*/
 
-.contactSection {
-	height: 50vh;
-}
+	/* Section 2 Mobile */
+	#featureSection {
+		height: 150vw;
+		width: 100vw;
+		display: inline-block;
+	}
 
-body > div > div > main > div.projectsSection.col-width-12 {
-}
+	#featuresLeft {
+		float: left;	
+		margin-left: 5vw;
+		width: 45vw;
+	}
 
-body > div > div > main > div.projectsSection.col-width-12 > div
- {
-	background-color: #dddddd; 
-	height: 5.55vh; 
-	margin: auto; 
-	margin-top: 10vh;
-}
+	#featuresRight {
+		float: right;
+		margin-right: 5vw;
+		width: 45vw;
+	}
 
-body > div > div > main > div.projectsSection.col-width-12 > div > h3{
-	font-family: 'Playfair Display';
-	font-weight: bold;
-	font-size: 2em;
-	text-align: center;
-}
+	div.featureCard {
+		height: 40vw;
+		width: 40vw;
+		background-color: #00BED4;
+		margin-top: 5vw;
+	}
 
-.demo-card-wide.mdl-card {
-	margin-top: 10vh;
-	height: 60vh;
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('../assets/demos/welcome_card.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
+	.cardTitle {
+		font-size: 1.25em;
+		text-align: center;
+		margin-top: 3vw;
+	}
+	/* END Section 2 Mobile */
 
-body > div > div > main > div.projectsSection.col-width-12 > div > div:nth-child(2) > div.mdl-card__title {
-	margin: auto;
 }
-
-
-
+/* ---------- END Mobile ---------- */

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-330.5 842 63 65">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #f6643e;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        fill: #00bed4;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_6_1" data-name="Symbol 6 – 1" transform="translate(-390)">
+    <path id="Path_11" data-name="Path 11" class="cls-1" d="M25,.5A24.5,24.5,0,1,1,.5,25,24.5,24.5,0,0,1,25,.5Z" transform="translate(66 850)"/>
+    <g id="Ellipse_3" data-name="Ellipse 3" class="cls-2" transform="translate(76 860)">
+      <circle class="cls-4" cx="15" cy="15" r="15"/>
+      <circle class="cls-5" cx="15" cy="15" r="14.5"/>
+    </g>
+    <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-3" width="15" height="10" transform="translate(84 842)"/>
+    <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-3" width="15" height="10" transform="translate(84 897)"/>
+    <rect id="Rectangle_16" data-name="Rectangle 16" class="cls-3" width="15" height="10" transform="translate(122.5 867.5) rotate(90)"/>
+    <rect id="Rectangle_17" data-name="Rectangle 17" class="cls-3" width="15" height="10" transform="translate(69.5 867.5) rotate(90)"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-3" width="15" height="10" transform="translate(69.732 885.161) rotate(45)"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-3" width="15" height="10" transform="translate(109.732 846.161) rotate(45)"/>
+    <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-3" width="15" height="10" transform="translate(120.339 892.232) rotate(135)"/>
+    <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-3" width="15" height="10" transform="translate(80.339 853.232) rotate(135)"/>
+  </g>
+</svg>
