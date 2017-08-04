@@ -1,110 +1,114 @@
-body > div > div > header > div.mdl-layout__drawer-button {
-	display: none;
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
 }
 
+
+/* Navigation Mobile */
+body > div > div > header > div.mdl-layout__drawer-button {
+	display: block;
+	margin-top: 25px;
+	height: 80px;
+}
+body > div > div > header > div.mdl-layout__drawer-button > i {
+	margin-top: 25px;
+	font-size: 60px;
+	color: #F6643E;
+}
+#toolbar {
+	height: 200px;
+}
 #toolbarLogo {
 	margin: auto;
-	height: 50px;
+	height: 180px;
+}
+#toolbarSpacer, 
+#toolbarNav {
+	display: none;
+}
+/* END Navigation Mobile */
+
+/* Section 1 Mobile */
+
+
+#heroSection {
+	height: 100vw;
+	width: 100vw;
+}
+#heroImage {
+	height: 66vw;
+	width: 100vw;
+}
+#heroText {
+	height: 33vw;
+	width: 100vw;
+	background-color: #00BED4;
+}
+#siteSlogan {
+	text-align: left;
+	margin-left: 10vw;
+	margin-top: 10vw;
+}
+#siteTagline {
+	margin: auto;
+	padding: 3%;
+	width: 80vw;
+}
+#callToActionButton {
+	margin-left: 33vw;
+}
+/* END Section 1 Mobile*/
+
+/* Section 2 Mobile */
+#featureSection {
+	height: 150vw;
+	width: 100vw;
+	display: inline-block;
 }
 
-/* ----------- Mobile ----------- */
-@media only screen
-	and (max-device-width: 667px) {
-	/* Navigation Mobile */
-	body > div > div > header > div.mdl-layout__drawer-button {
-		display: block;
-		margin-top: 25px;
-		height: 80px;
-	}
-	body > div > div > header > div.mdl-layout__drawer-button > i {
-		margin-top: 25px;
-		font-size: 60px;
-		color: #F6643E;
-	}
-	#toolbar {
-		height: 200px;
-	}
-	#toolbarLogo {
-		margin: auto;
-		height: 180px;
-	}
-	#toolbarSpacer, 
-	#toolbarNav {
-		display: none;
-	}
-	/* END Navigation Mobile */
-
-	/* Section 1 Mobile */
-	
-
-	#heroSection {
-		height: 100vw;
-		width: 100vw;
-	}
-	#heroImage {
-		height: 66vw;
-		width: 100vw;
-	}
-	#heroText {
-		height: 33vw;
-		width: 100vw;
-		background-color: #00BED4;
-	}
-	#siteSlogan {
-		text-align: left;
-		margin-left: 10vw;
-		margin-top: 10vw;
-	}
-	#siteTagline {
-		margin: auto;
-		padding: 3%;
-		width: 80vw;
-	}
-	#callToActionButton {
-		margin-left: 33vw;
-	}
-	/* END Section 1 Mobile*/
-
-	/* Section 2 Mobile */
-	#featureSection {
-		height: 150vw;
-		width: 100vw;
-		display: inline-block;
-	}
-
-	#featuresLeft {
-		float: left;	
-		margin-left: 5vw;
-		width: 45vw;
-	}
-
-	#featuresRight {
-		float: right;
-		margin-right: 5vw;
-		width: 45vw;
-	}
-
-	div.featureCard {
-		height: 40vw;
-		width: 40vw;
-		background-color: #00BED4;
-		margin-top: 5vw;
-	}
-
-	.cardTitle {
-		font-size: 1.25em;
-		text-align: center;
-		margin-top: 3vw;
-	}
-	/* END Section 2 Mobile */
-
+#featuresLeft {
+	float: left;	
+	margin-left: 5vw;
+	width: 45vw;
 }
-/* ---------- END Mobile ---------- */
 
-/* ----------- Mobile ----------- */
-@media only screen
-	and (max-width: 667px) {
-	/* Navigation Mobile */
+#featuresRight {
+	float: right;
+	margin-right: 5vw;
+	width: 45vw;
+}
+
+div.featureCard {
+	height: 40vw;
+	width: 40vw;
+	background-color: #00BED4;
+	margin-top: 5vw;
+}
+
+.cardTitle {
+	font-size: 1.25em;
+	text-align: center;
+	margin-top: 3vw;
+}
+/* END Section 2 Mobile */
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    /* Navigation Mobile */
 	body > div > div > header > div.mdl-layout__drawer-button {
 		display: block;
 		height: 40px;
@@ -186,7 +190,28 @@ body > div > div > header > div.mdl-layout__drawer-button {
 		text-align: center;
 		margin-top: 3vw;
 	}
-	/* END Section 2 Mobile */
-
 }
-/* ---------- END Mobile ---------- */
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+body > div > div > header > div.mdl-layout__drawer-button {
+	display: none;
+}
+
+#toolbarLogo {
+	margin: auto;
+	height: 50px;
+}
