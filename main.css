@@ -111,7 +111,7 @@ div.featureCard {
 /* Section 3 Mobile */
 #businessSection {
 	width: 100vw;
-	height: 150vw;
+	height: 175vw;
 	background-color: #00BED4;
 }
 
@@ -151,9 +151,11 @@ div.featureCard {
 	margin-left: 5vw;
 	height: 80vw;
 	background-color: #ffffff;
+	margin-top: 10vw;
 }
 #businessText{
 	padding: 10%;
+	padding-bottom: 0%;
 	font-size: 1.5em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
