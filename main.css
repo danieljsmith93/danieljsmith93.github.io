@@ -7,12 +7,10 @@
 /* Navigation Mobile */
 body > div > div > header > div.mdl-layout__drawer-button {
 	display: block;
-	margin-top: 25px;
-	height: 80px;
 }
 body > div > div > header > div.mdl-layout__drawer-button > i {
-	margin-top: 25px;
-	font-size: 60px;
+	margin-top: 10%;
+	font-size: 36px;
 	color: #F6643E;
 }
 #toolbar {
@@ -205,10 +203,6 @@ div.featureCard {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
-
-body > div > div > header > div.mdl-layout__drawer-button {
-	display: none;
 }
 
 #toolbarLogo {
