@@ -43,7 +43,7 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 	background-color: #00BED4;
 }
 #siteSlogan {
-	/*text-align: left;*/
+	text-align: left;
 	margin-left: 10vw;
 	margin-top: 10vw;
 	font-family: 'Playfair Display', serif;
