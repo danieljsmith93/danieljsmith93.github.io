@@ -30,15 +30,15 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 
 
 #heroSection {
-	height: 100vw;
+	height: 150vw;
 	width: 100vw;
 }
 #heroImage {
-	height: 66vw;
+	height: 100vw;
 	width: 100vw;
 }
 #heroText {
-	height: 33vw;
+	height: 50vw;
 	width: 100vw;
 	background-color: #00BED4;
 }
