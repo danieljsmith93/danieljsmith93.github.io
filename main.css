@@ -46,11 +46,16 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 	text-align: left;
 	margin-left: 10vw;
 	margin-top: 10vw;
+	font-family: 'Playfair Display', serif;
+
 }
 #siteTagline {
 	margin: auto;
 	padding: 3%;
 	width: 80vw;
+	font-size: 1.25em;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
 }
 #callToActionButton {
 	margin-left: 33vw;
@@ -91,6 +96,10 @@ div.featureCard {
 	font-size: 1.25em;
 	text-align: center;
 	margin-top: 3vw;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+
 }
 /* END Section 2 Mobile */
 
