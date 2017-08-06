@@ -67,23 +67,29 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 
 /* Section 2 Mobile */
 #featureSection {
-	height: 150vw;
+	height: 160vw;
 	width: 100vw;
 	display: inline-block;
+}
+
+#featureSectionTitle {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	margin-top: 5vw;
+
 }
 
 #featuresLeft {
 	float: left;	
 	margin-left: 7vw;
 	width: 45vw;
-	margin-top: 5vw;
 }
 
 #featuresRight {
 	float: right;
 	margin-right: 3vw;
 	width: 45vw;
-	margin-top: 5vw;
 
 }
 
