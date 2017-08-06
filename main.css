@@ -68,12 +68,15 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 	float: left;	
 	margin-left: 6vw;
 	width: 45vw;
+	margin-top: 5vw;
 }
 
 #featuresRight {
 	float: right;
 	margin-right: 4vw;
 	width: 45vw;
+	margin-top: 5vw;
+
 }
 
 div.featureCard {
