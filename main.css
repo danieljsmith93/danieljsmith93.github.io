@@ -156,10 +156,16 @@ div.featureCard {
 #businessText{
 	padding: 10%;
 	padding-bottom: 0%;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	text-align: center;
+}
+#businessActionButton {
+	margin-left: 33vw;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 /* END Section 3 Mobile */
 
