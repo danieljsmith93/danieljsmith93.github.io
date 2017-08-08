@@ -111,7 +111,7 @@ div.featureCard {
 /* Section 3 Mobile */
 #businessSection {
 	width: 100vw;
-	height: 185vw;
+	height: 190vw;
 	background-color: #00BED4;
 }
 
@@ -149,7 +149,7 @@ div.featureCard {
 #businessTextBox{
 	width: 90vw;
 	margin-left: 5vw;
-	height: 90vw;
+	height: 100vw;
 	background-color: #ffffff;
 	margin-top: 10vw;
 }
