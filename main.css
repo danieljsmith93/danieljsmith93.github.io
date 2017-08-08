@@ -35,7 +35,7 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 	width: 100vw;
 }
 #heroText {
-	height: 45vw;
+	height: 55vw;
 	width: 100vw;
 	background-color: #00BED4;
 }
@@ -48,11 +48,12 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 }
 #siteTagline {
 	margin: auto;
-	padding: 3%;
+	padding: 5vw;
 	width: 80vw;
 	font-size: 1.25em;
 	font-family: 'Raleway', sans-serif;
 	color: #ffffff;
+	text-align: center;
 }
 #callToActionButton {
 	margin-left: 33vw;
@@ -63,47 +64,17 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 /* END Section 1 Mobile*/
 
 /* Section 2 Mobile */
-#featureSection {
-	height: 165vw;
+#portfolioSection {
+	height: 175vw;
 	width: 100vw;
 	display: inline-block;
 }
 
-#featureSectionTitle {
+#portfolioSectionTitle {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 28px;
-
-}
-
-#featuresLeft {
-	float: left;	
-	margin-left: 7vw;
-	width: 45vw;
-}
-
-#featuresRight {
-	float: right;
-	margin-right: 3vw;
-	width: 45vw;
-
-}
-
-div.featureCard {
-	height: 40vw;
-	min-height: 10px !important;
-	width: 40vw;
-	background-color: #00BED4;
-	margin-top: 5vw;
-}
-
-.cardTitle {
-	font-size: 1.25em;
-	text-align: center;
-	margin-top: 3vw;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	color: #ffffff;
+	margin-top: 15vw;
 
 }
 /* END Section 2 Mobile */
@@ -111,7 +82,7 @@ div.featureCard {
 /* Section 3 Mobile */
 #businessSection {
 	width: 100vw;
-	height: 190vw;
+	height: 195vw;
 	background-color: #00BED4;
 }
 
@@ -151,7 +122,8 @@ div.featureCard {
 	margin-left: 5vw;
 	height: 100vw;
 	background-color: #ffffff;
-	margin-top: 10vw;
+	margin-top: 12vw;
+
 }
 #businessText{
 	padding: 10%;
@@ -168,3 +140,50 @@ div.featureCard {
 }
 /* END Section 3 Mobile */
 
+/* Section 4 Mobile */
+
+#featureSection {
+	height: 180vw;
+	width: 100vw;
+	display: inline-block;
+}
+
+#featureSectionTitle {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	margin-top: 10vw;
+
+}
+
+#featuresLeft {
+	float: left;	
+	margin-left: 7vw;
+	width: 45vw;
+}
+
+#featuresRight {
+	float: right;
+	margin-right: 3vw;
+	width: 45vw;
+
+}
+
+div.featureCard {
+	height: 40vw;
+	min-height: 10px !important;
+	width: 40vw;
+	background-color: #00BED4;
+	margin-top: 5vw;
+}
+
+.cardTitle {
+	font-size: 1.25em;
+	text-align: center;
+	margin-top: 3vw;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+
+}
+/* END Section 4 Mobile */
