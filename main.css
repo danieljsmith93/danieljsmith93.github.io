@@ -56,7 +56,6 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 	text-align: center;
 }
 #callToActionButton {
-	margin-left: 33vw;
 	color: #ffffff;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -65,7 +64,7 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 
 /* Section 2 Mobile */
 #portfolioSection {
-	height: 175vw;
+	height: 185vw;
 	width: 100vw;
 	display: inline-block;
 }
@@ -76,6 +75,23 @@ body > div > div > header > div.mdl-layout__drawer-button > i {
 	font-size: 28px;
 	margin-top: 15vw;
 
+}
+#portfolioItems {
+	margin-top: 6vw;
+}
+.portfolioCard {
+	width: 90vw !important;
+	height: 40vw !important;
+	/*margin-top: 10vw !important;*/
+	margin-bottom: 6vw !important;
+	margin: auto;
+	background-color: #00BED4 !important;
+}
+
+.portfolioCardTitle {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.25em;
+	color: #ffffff !important;
 }
 /* END Section 2 Mobile */
 
