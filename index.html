@@ -1,159 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>DS Dev</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<link rel="stylesheet" href="./main.css">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,300i,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-deep_orange.min.css" />
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    
-    <div id="toolbar" class="mdl-layout__header-row">
+  <nav class="cyan" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img id="logo" src="./assets/siteLogo.svg" alt=""></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-    	<img id="toolbarLogo" src="./siteLogo.svg" alt="" style=" margin-top: 0;">
-    	<div id="toolbarSpacer" class="mdl-layout-spacer"></div>
-		<nav id="toolbarNav" class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="" >Link</a>
-	      <a class="mdl-navigation__link" href="" >Link</a>
-	      <a class="mdl-navigation__link" href="" >Link</a>
-	      <a class="mdl-navigation__link" href="" >Link</a>
-	    </nav>
-		
-      
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons orange-text text-lighten-1">menu</i></a>
     </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-menu__item--full-bleed-divider">
-    	<h1 style="font-size: 2em; margin-left: 2vw;">
-	    	Daniel Smith<br> 
-	    	Development
-		</h1>
-    </span>
-    <span class="mdl-menu__item--full-bleed-divider">
-    	<nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="">Home</a>
-	      <a class="mdl-navigation__link" href="">Portfolio</a>
-	      <a class="mdl-navigation__link" href="">Blog</a>
-	      <a class="mdl-navigation__link" href="">Contact</a>
-	    </nav>
-    </span>
-    
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center  text-lighten-1">Design, Develop, Deliver.</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A simplified approach to getting your business up and running.</h5>
+      </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Get Started</a>
+      </div>
+      <br><br>
+
+    </div>
   </div>
-  <main class="mdl-layout__content">
-    <section id="heroSection">
-    	<div id="heroImage">
-    		<h1 id="siteSlogan">
-	    		Design,<br>
-				Develop,<br>
-				Deliver.
-	    	</h1>
-    	</div>
-    	<div id="heroText">
-    		<p id="siteTagline">
-    			We work with you to take your business to the next level and guide you along the way.
-    		</p>
 
-    		<div class="mdl-grid">
-			    <div class="mdl-layout-spacer"></div>
-				<button id="callToActionButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
-				  	Learn More
-				</button>
-			    <div class="mdl-layout-spacer"></div>
-			</div>
-    		<!-- Accent-colored raised button -->
-		</div>
-    </section>
-    <section id="portfolioSection">
-    	<h1 id="portfolioSectionTitle" class="mdl-typography--text-center	">Our Work</h1>
-    	<div id="portfolioItems">
-    		<div class="mdl-card mdl-card--border mdl-shadow--4dp portfolioCard">
-    			<div class="mdl-card__media">
-    				<img src="https://developers.google.com/search/mobile-sites/imgs/mobile-seo/transition.png" width="100%" height="75%" alt="">
-    			</div>
-    			<div class="mdl-card__title portfolioCardTitle">
-    				Moments By Bilal
-    			</div>
-			</div>
-			<div class="mdl-card mdl-card--border mdl-shadow--4dp portfolioCard">
-    			<div class="mdl-card__media">
-    				<img src="http://www.wordpresssupport247.com/wp-content/uploads/2017/01/9672-.jpg" width="100%" height="75%" alt="">
-    			</div>
-    			<div class="mdl-card__title portfolioCardTitle">
-    				Jacqueline Recendez
-    			</div>
-			</div>
-			<div class="mdl-grid">
-			    <div class="mdl-layout-spacer"></div>
-				<button id="callToActionButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
-				  	See More
-				</button>
-			    <div class="mdl-layout-spacer"></div>
-			</div>
-    	</div>
-    	
-    </section>
-    <span class="mdl-menu__item--full-bleed-divider"></span>
 
-    <section id="businessSection">
-    	<h1 id="businessSectionTitle" class="mdl-typography--text-center	">Business Solutions</h1>
-    	<div id="businessImage">
-    		<h1 id="businessImageText">
-	    		" We believe in supporting small businesses and helping them achieve their full potential. "
-	    	</h1>
-	    	<h3 id="businessImageAuthor">- Daniel Smith</h3>
-    	</div>
-    	<div id="businessTextBox">
-    		<p id="businessText">
-    			There is no universal solution to everyone's problems. <br><br>
-    			We keep this in mind when we sit down with you and guide you step by step to address each obstacle one at a time.
-    		</p>
-    		
-			<div class="mdl-grid">
-			    <div class="mdl-layout-spacer"></div>
-					<button id="businessActionButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
-				  Our Process
-				</button>
-			    <div class="mdl-layout-spacer"></div>
-			</div>
-    	</div>
-    </section>
-    <section id="featureSection">
-    	<h1 id="featureSectionTitle" class="mdl-typography--text-center	">Site Features</h1>
-    	<div id="featuresLeft">
-    		<div class="mdl-card mdl-card--border mdl-shadow--4dp featureCard">
-    			<div class="cardTitle">Analytics</div>
-    			<img src="./analytics.svg" height="30%" style="margin-top: 7vw;" alt="">
-			</div>
-			<div class="mdl-card mdl-card--border mdl-shadow--4dp featureCard">
-    			<div class="cardTitle">Design</div>
-    			<img src="./design.svg" height="45%" style="margin-top: 5vw;" alt="">
-			</div>
-			<div class="mdl-card mdl-card--border mdl-shadow--4dp featureCard">
-    			<div class="cardTitle">Control</div>
-    			<img src="./customize.svg" height="40%" style="margin-top: 5vw;" alt="">
-			</div>
-    	</div>
-    	<div id="featuresRight">
-    		<div class="mdl-card mdl-card--border mdl-shadow--4dp featureCard">
-    			<div class="cardTitle">Payments</div>
-    			<img src="./payments.svg" height="60%" style="margin-top: 1vw;" alt="">
-			</div>
-			<div class="mdl-card mdl-card--border mdl-shadow--4dp featureCard">
-    			<div class="cardTitle">Content</div>
-    			<img src="./content.svg" height="40%" style="margin-top: 5vw;" alt="">
-			</div>
-			<div class="mdl-card mdl-card--border mdl-shadow--4dp featureCard">
-    			<div class="cardTitle">Mobile</div>
-    			<img src="./mobile.svg" height="45%" style="margin-top: 5vw;" alt="">
-			</div>
-    	</div>
-    </section>
-  </main>
-</div>
-</body>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center orange-text text-lighten-1"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">High Performance</h5>
+
+            <p class="light">We use only the best technologies to build your product. The tools we use are used by large companies and proven to work well in production. We offer performance and reliability without sacrificing the experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center orange-text text-lighten-1"><i class="material-icons">group</i></h2>
+            <h5 class="center">Responsive Design</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center orange-text text-lighten-1"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Low Maintenance</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer cyan">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 m12 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 m6 s12">
+          <h5 class="white-text">Follow</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m6 s12">
+          <h5 class="white-text">Contact</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="cyan-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
