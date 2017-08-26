@@ -13,7 +13,14 @@
 /*===============================================================================*/
 
 
-
+@font-face {
+    font-family: Playfair-Display;
+    src: url(../fonts/Playfair_Display);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway);
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -22,6 +29,22 @@
 }
 #logo {
 	height: 55px;
+}
+
+.playfair-black {
+	font-family: Playfair-Display;
+	font-weight: 900;
+}
+.playfair {
+	font-family: Playfair-Display;
+}
+.raleway {
+	font-family: Raleway;
+
+}
+.raleway-bold {
+	font-family: Raleway;
+	font-weight: 700;
 }
 
 
