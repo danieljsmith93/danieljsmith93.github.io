@@ -1,28 +1,19 @@
-<svg id="Symbol_1_1" data-name="Symbol 1 – 1" xmlns="http://www.w3.org/2000/svg" viewBox="-428.5 -380 266 85">
+<svg id="Symbol_7_1" data-name="Symbol 7 – 1" xmlns="http://www.w3.org/2000/svg" viewBox="79 6 162 64">
   <defs>
     <style>
       .cls-1 {
-        fill: #ddd;
-        font-size: 36px;
+        fill: #fff;
+        font-size: 24px;
         font-family: PlayfairDisplay-Bold, Playfair Display;
         font-weight: 700;
-        letter-spacing: 0.06em;
       }
 
-      .cls-2, .cls-4 {
-        fill: #add8e6;
-      }
-
-      .cls-3 {
-        font-family: PlayfairDisplay-Italic, Playfair Display;
-        font-weight: 400;
+      .cls-2 {
+        font-family: PlayfairDisplay-BoldItalic, Playfair Display;
         font-style: italic;
-      }
-
-      .cls-4 {
-        letter-spacing: 0.04em;
       }
     </style>
   </defs>
-  <text id="siteLogoLight" class="cls-1" transform="translate(-428.5 -341)"><tspan x="0" y="0">Daniel</tspan><tspan class="cls-2" y="0">(</tspan><tspan class="cls-3" y="0">Smith</tspan><tspan class="cls-2" y="0">)</tspan><tspan x="0" y="37">Development</tspan><tspan class="cls-4" y="37">_</tspan></text>
+  <text id="Daniel_Smith_Development_" data-name="Daniel (Smith)
+Development_" class="cls-1" transform="translate(160 32)"><tspan x="-79.043" y="0">Daniel (</tspan><tspan class="cls-2" y="0">Smith</tspan><tspan y="0">)</tspan><tspan x="-80.514" y="32">Development_</tspan></text>
 </svg>
