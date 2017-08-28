@@ -49,6 +49,20 @@ nav {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 }
+
+.crop {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.crop img {
+	width: 100%;
+}
+
 #contactForm {
 	padding: 0 15px;
 	margin-top: 15px;
@@ -70,7 +84,14 @@ nav {
 #logo {
 	height: 60px;
 }
-
+.crop {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
 
 
 }
@@ -80,9 +101,14 @@ nav {
 @media only screen and (min-width: 992px) {
 
 
-
-/**/
-
+.crop {
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
 
 
 }
