@@ -47,7 +47,7 @@ nav {
 }
 .raleway-bold {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-weight: 700 !important;
 }
 
 .crop {
