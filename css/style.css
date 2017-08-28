@@ -19,6 +19,10 @@ nav {
 	height: 60px;
 }
 
+.card-content {
+	padding: 12px !important;
+}
+
 .icon-block {
   padding: 0 15px;
 }
