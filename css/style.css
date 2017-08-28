@@ -45,6 +45,14 @@ nav {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 }
+#contactForm {
+	padding: 0 15px;
+	margin-top: 15px;
+}
+#submitButton {
+	display: block;
+	margin: auto;
+}
 
 
 
